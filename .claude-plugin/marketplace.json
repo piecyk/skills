@@ -1,0 +1,12 @@
+{
+  "name": "piecyk",
+  "owner": { "name": "Damian Pieczynski", "url": "https://github.com/piecyk" },
+  "description": "Small agent skills by piecyk, as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "piecyk-skills",
+      "source": "./",
+      "description": "Small agent skills by piecyk."
+    }
+  ]
+}
