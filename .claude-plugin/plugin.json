@@ -1,6 +1,6 @@
 {
   "name": "piecyk-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small agent skills by piecyk.",
   "author": { "name": "Damian Pieczynski", "url": "https://github.com/piecyk" },
   "repository": "https://github.com/piecyk/skills",
