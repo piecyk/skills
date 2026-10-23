@@ -1,8 +1,8 @@
 {
   "name": "piecyk-skills",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Small agent skills by piecyk.",
   "author": { "name": "Damian Pieczynski", "url": "https://github.com/piecyk" },
   "repository": "https://github.com/piecyk/skills",
-  "skills": ["./skills/slack-agent-room"]
+  "skills": ["./skills/slack-agent-room", "./skills/natural-message"]
 }
