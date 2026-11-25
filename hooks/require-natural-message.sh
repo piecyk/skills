@@ -28,8 +28,10 @@ if [ "$tool" = "Bash" ]; then
   while read -r f; do
     [ -f "$f" ] && text+=$'\n'"$(cat "$f")"
   done < <(grep -oE -- '(--body-file|--input|-F) +[^ ;|&]+|body=@[^ ;|&]+' <<<"$cmd" | sed -E 's/^(--body-file|--input|-F) +//; s/^body=@//; s/^@//' | tr -d "'\"")
-else
+elif [[ "$tool" == *slack_* ]]; then
   text="$(jq -r '.tool_input.message // .tool_input.text // empty' <<<"$input")"
+else
+  exit 0
 fi
 
 grep -q '—' <<<"$text" && deny "This text has an em dash (—). Use a comma or a period instead, then run the call again."
